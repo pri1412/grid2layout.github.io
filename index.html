@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+     main {
+  
+}
+.search {
+  height: 350px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 100px 0 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.search::before {
+  content: '';
+  background: url('https://i.ibb.co/Rv8cYS8/0.jpg');
+  position: absolute;
+  top: -130px;
+  right: 0;
+  bottom: 0;
+  left: -10px;
+  transform: translateZ(-0.5px) scale(1.5);
+}
+.search form {
+    position: relative;
+  }
+  
+  .search input {
+    max-width: calc(100vw - 20px);
+    width: 750px;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    padding: 10px 30px 15px;
+    color: var(--grey-3);
+    outline: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .9);
+    transition: all 0.2s;
+  }
+  
+  .search input:focus {
+    width: 780px;
+  }
+  
+  .search input:focus::placeholder {
+    color: var(--grey-2);
+  }
+  
+  .search input::placeholder {
+    font-style: italic;
+    color: var(--grey-3);
+    transition: all 0.2s;
+  }
+  
+  .search button {
+    position: absolute;
+    right: 30px;
+    bottom: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .search .fa-search {
+    font-size: 25px;
+    color: var(--grey-3);
+  }
+  ul {
+    list-style: none;
+  }
+  
+  .search ul {
+    position: relative;
+    display: flex;
+  }
+  
+  .btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    display: block;
+    height: 50px;
+    width: 175px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-5px);
+  }
+  
+  .search .btn {
+    color: white;
+    background: var(--accent-1);
+    margin: 0 25px;
+  }
+  
+ 
+
+
+  </style>
+  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="sty.css">
+
+  <title>Perfect Omelette</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="menu-icon"></div>
+      <h1>Perfect Omelette</h1>
+      <a href="#" class="special-link">Subscribe <span class="fas fa-angle-double-right"></span></a>
+    </div>
+  </header>
+
+  <main>
+    <nav class="search">
+      <form action="#">
+        <input type="text" placeholder="I want to make ...">
+        <button><span class="fas fa-search"></span></button>
+      </form>
+
+      <ul>
+        <li>
+          <a href="#" class="btn">Salad</a>
+        </li>
+        <li>
+          <a href="#" class="btn">Lunch</a>
+        </li>
+        <li>
+          <a href="#" class="btn">Snack</a>
+        </li>
+      </ul>
+    </nav>
+
+
+</body>
+</html>
+
+
